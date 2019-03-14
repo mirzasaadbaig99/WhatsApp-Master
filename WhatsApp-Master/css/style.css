@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue','Roboto', sans-serif;
+}
+
+/* TYPHOGRAPHY */
+
+h1 {
+    color: #362f36;
+    opacity: 0.7;
+}
+
+p {
+    color: #362f36;
+    opacity: 0.7;
+    line-height: 25px;
+}
+
+.highlighted {
+    color: #67bdec;
+}
+
+/* Wrapper */
+
+.wrapper {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+/* Navigation Styling */
+
+nav {
+    display: flex;
+    background-color: #1ebea5 ;
+}
+
+nav > ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+     padding: 15px; 
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+
+nav > ul > li {
+    float: right;
+}
+.nav-logo {
+    margin-right: auto;
+}
+
+.burger-nav {
+    display: none;
+}
+
+/* Header Design */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    float: right;
+    /* max-width: 70%; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.header-info-list {
+    list-style-type: none;
+}
+
+.header-img {
+    /* max-width: 50%; */
+    float: left;
+}
+
+.platforms {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.light-note {
+    color: #dcd7db;
+    font-size: 12px;
+}
+
+.download-btn {
+        display: none;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #52e464;
+        border: none;
+        border-radius: 30px;    
+}
+
+
+/* PRODUCTO AREA DESIGN */
+
+.product-container {
+    display: flex;
+}
+
+.product-1 {
+    background-color: #d0e9ea;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.product-img {
+    margin-bottom: -4%;
+}
+
+.product-2 {
+    background-color: #edf8f5;
+    text-align: center;
+}
+
+.product {
+    min-height: 540px;
+    padding: 5%;
+}
+
+/* Footer Design */
+
+.footer-container {
+    max-width: 100%;
+    background-color: #FFF;
+    margin: 0 auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  #273443;
+    color: white;
+  }
+  
+  .column-1 {
+    flex: 3;
+  }
+  
+  .column-2 {
+    flex: 1;
+  }
+  
+  .column-3 {
+    flex: 1;
+  }
+
+  .column-4 {
+      flex: 1;
+  }
+
+.mini-footer {
+    padding: 1%;
+    background-color: #232f3c  ;
+    color: white;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer-links > li {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.list-heading {
+
+    color: white;
+    opacity: 0.7;
+}
+
+  /* Media Queries to make it Responsive */
+
+  @media only screen and (max-width: 1000) {
+      .header-info {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding: 1px !important;
+      }
+      .navbar{
+        width: 900px;
+        padding: 2px;
+      }
+      
+  }
+
+  @media only screen and (max-width: 750px) {
+    .navbar{
+        width: 600px;
+        padding: 0px;
+        font-size: 14px;
+        padding-left: -20px;
+      }
+      
+      /* HEADER */
+
+    .download-btn {
+        display: inline-block;
+    }
+
+    .header {
+        color: white;
+    }
+    .header-info {
+        background-color:  #1ebea5;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5%;
+        color: white;
+        opacity: 1 !important; 
+    }
+
+    .platforms, .hide {
+        display: none;
+    }
+
+    .header-info-list > li > p, a, h1 {
+        color: white;
+        text-align: center;
+        opacity: 1 !important;
+    }
+
+    /* Product Area Design */
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product {
+        margin: 0px;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+
+  /* Navigation */
+
